@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.static('public'));
 
 app.use('/thread',thread);
-console.log('l')
+
 const run = async ()=>{
   await fileDb.init();
     app.listen(config.port,()=>{
